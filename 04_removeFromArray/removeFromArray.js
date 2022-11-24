@@ -1,8 +1,9 @@
 const removeFromArray = function(array, ...valuesToRemove) {
+    let container = array;
     for (let i = 0; i < valuesToRemove.length; ++i) {
-        array = array.filter(function(value, i, arr) { return value !== valuesToRemove[i];});
+        container = container.filter(function(value, _no, _no2) { return value !== valuesToRemove[i];});
     }
-    return array;
+    return container;
 };
 
 // Do not edit below this line
